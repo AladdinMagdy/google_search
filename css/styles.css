@@ -337,7 +337,7 @@ div#content section #type2_results
       /* SECTION STYLE ENDING ------------------------ */
 
 div#content aside {
-  background-color: #aaa;
+  /* background-color: #aaa; */
   width: 30%;
   height: 500px;
   float: left;
