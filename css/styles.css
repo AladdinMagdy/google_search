@@ -26,6 +26,8 @@ main#page {
   background-color: #ccc;
 }
 
+/*-------------------- HEADER STYLE BEGINING */
+
 main#page header {
   background-color: #1eaaf1;
   width: 100%;
@@ -39,7 +41,7 @@ header nav#account_setting {
 }
 
 header nav#account_setting ul {
-  float: right;
+  /* float: right; */
   color: #016ca2;
   list-style-type: none;
   margin: 0;
@@ -146,11 +148,11 @@ header nav#search_options a {
   color: #bbe5fa;
   padding: 0 25px;
   float: left;
+  /* width: 100px; */
   line-height: 40px;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 500;
-  /* margin: 10px; */
+  /* text-align: center; */
 }
 
 header nav#search_options a.active {
@@ -163,27 +165,185 @@ header nav#search_options a.active {
   padding-right: 0;
 } */
 
-div#container {
+/* HEADER STYLE ENDING ------------------------ */
+
+/*-------------------- CONTENT STYLE BEGINING */
+
+div#content {
   width: 90%;
   background-color: #fff;
   margin: 0 auto;
-  padding: 50px;
+  padding: 50px 0 0 50px;
+  font-family: 'arial';
+  font-weight: 400;
 }
 
-div#container section {
-  background-color: #bbb;
+      /*-------------------- SECTION STYLE BEGINING */
+
+div#content section {
+  /* background-color: #bbb; */
   width: 70%;
-  height: 500px;
+  /* height: 500px; */
   float: left;
   /* margin-right: 20px; */
+  /* TODO: el padding-left lel section wala el content koulo?
+   azwa2? */
+  padding-left: 6.7%;
 }
 
-div#container aside {
+div#content section a {
+  /* color: #1a0dab; */
+  color: #2374b9;
+  text-decoration: none;
+}
+
+div#content section .search_block {
+  /* background-color: pink; */
+  width: 80%;
+  border-bottom: 1px solid #e9ebed;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+div#content section .search_block:last-child {
+  border: 0;
+  padding: 0;
+}
+
+div#content section
+.search_block h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+div#content section
+.search_block .link_destination cite {
+  /* color: #006621; */
+  color: #87b360;
+  font-size: 14px;
+  font-style: normal;
+}
+
+/* TODO: down arrow for cite link here */
+
+div#content section
+.search_block .rating {
+  color: #808080;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+div#content section
+.search_block span {
+  line-height: 1.4;
+  font-size: 13px;
+  word-wrap: break-word;
+}
+
+/* TODO: Specification is a must? */
+
+div#content section
+.search_block .sBlock_links a {
+  font-size: 13px;
+}
+
+div#content section
+.search_block .link_info
+.info_line {
+display: inline-block;
+}
+
+/* TODO: el a eli gouwa el p el color mn el p wala el a */
+
+div#content section
+.search_block .link_info
+.info_line p {
+  font-size: 13px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* link_destination */
+div#content section
+.search_block img {
+  float: left;
+  padding-top: 3px;
+}
+
+.after_video {
+  /* float: right; */
+  margin-left: 125px;
+  /* background-color: pink; */
+}
+
+div#content section #type2_results
+.related_movies {
+  border: 0.2px solid #ddd;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  border-radius: 2px;
+  position: relative;
+  padding: 16px 0;
+  margin-bottom: 50px;
+  left: -25px;
+}
+
+div#content section #type2_results
+.related_movies h3 {
+  margin: 24px 0 0 16px;
+  font-size: 18px
+  color: #222;
+  font-weight: 400;
+}
+
+div#content section #type2_results
+.related_movies h3 a {
+  font-size: 13px;
+  /* width: 72px; */
+  margin-right: 15px;
+  color: #777;
+  /* text-align: right; ??? */
+  position: absolute;
+   right: 5px;
+   top: 45px;
+
+}
+
+div#content section #type2_results
+.related_movies .movies {
+  padding: 15px 50px;
+}
+
+div#content section #type2_results
+.related_movies .movies a {
+  /* position: absolute; */
+  /* display: block; */
+  float: left;
+  font-size: 13px;
+  width: 72px;
+  margin-right: 15px;
+}
+
+div#content section #type2_results
+.related_movies .movies a:last-child {
+  margin-right: 0;
+}
+
+div#content section #type2_results
+.related_movies a .title {
+  /* position: absolute; */
+}
+
+      /* SECTION STYLE ENDING ------------------------ */
+
+div#content aside {
   background-color: #aaa;
   width: 30%;
   height: 500px;
   float: left;
 }
+
+/* CONTENT STYLE ENDING ------------------------ */
 
 footer {
   width: 100%;
